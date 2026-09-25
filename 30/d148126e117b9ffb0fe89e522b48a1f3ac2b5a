@@ -1,0 +1,129 @@
+.agents/skills/marimo-pair/.claude-plugin/marketplace.json
+  s_6b087d85366ce1::t_88f3c9ec1c3852 1-21
+.agents/skills/marimo-pair/.github/workflows/release.yml
+  s_6b087d85366ce1::t_5552ed7c3b7fca 1-58
+.agents/skills/marimo-pair/LICENSE
+  s_6b087d85366ce1::t_159e992941a5a0 1-202
+.agents/skills/marimo-pair/README.md
+  s_6b087d85366ce1::t_fc0490316b3ed2 1-74
+.agents/skills/marimo-pair/SKILL.md
+  s_6b087d85366ce1::t_6288c0a6a01a20 1-240
+.agents/skills/marimo-pair/reference/finding-marimo.md
+  s_6b087d85366ce1::t_f9659ce8ad1b32 1-70
+.agents/skills/marimo-pair/reference/gotchas.md
+  s_6b087d85366ce1::t_e7a0a5a3db1998 1-66
+.agents/skills/marimo-pair/reference/notebook-improvements.md
+  s_6b087d85366ce1::t_e408512d0e4c69 1-91
+.agents/skills/marimo-pair/reference/rich-representations.md
+  s_6b087d85366ce1::t_870086a0ab8ec7 1-302
+.agents/skills/marimo-pair/renovate.json
+  s_6b087d85366ce1::t_17b9cd199a6955 1-6
+.agents/skills/marimo-pair/scripts/discover-servers.sh
+  s_6b087d85366ce1::t_ba60116689f0be 1-54
+.agents/skills/marimo-pair/scripts/execute-code.sh
+  s_6b087d85366ce1::t_ba231a5543af27 1-210
+.devcontainer/Dockerfile
+  s_6b087d85366ce1::t_4aa07edaa51cef 1-55
+.devcontainer/devcontainer.json
+  s_6b087d85366ce1::t_36a134ab95e5ed 1-22
+.github/copilot-instructions.md
+  s_6b087d85366ce1::t_b633b57f655a9b 1-3
+.github/dependabot.yml
+  s_6b087d85366ce1::t_3d8e40ce441546 1-9
+.github/workflows/code-style.yaml
+  s_6b087d85366ce1::t_d1a8be9db37033 1-19
+.github/workflows/docs.yaml
+  s_6b087d85366ce1::t_33339cd68961da 1-40
+.github/workflows/pr-tests.yaml
+  s_6b087d85366ce1::t_fde353f6ae334a 1-61
+.github/workflows/release-pypi-package.yaml
+  s_6b087d85366ce1::t_05617a034cdcd6 1-251
+.gitignore
+  s_6b087d85366ce1::t_e23ab9ec4c2738 1-152
+AGENTS.md
+  s_6b087d85366ce1::t_b0eeeef1117262 1-103
+README.md
+  s_6b087d85366ce1::t_2f5bc270790f4a 1-84
+data/external/7OG3.pdb
+  s_6b087d85366ce1::t_c7d633505545b5 1-9740
+data/external/ired88_esmfold.pdb
+  s_6b087d85366ce1::t_9f48b4877080b1 1-2268
+data/external/ired88_wt.fasta
+  s_6b087d85366ce1::t_029886486019ba 1-2
+data/raw/cs1c02786_si_002.csv
+  s_6b087d85366ce1::t_9789c1edcb65f3 1-11306
+data/raw/cs1c02786_si_003.csv
+  s_6b087d85366ce1::t_4e7087486dbda0 1-428
+data/raw/ired-master-table.csv
+  s_6b087d85366ce1::t_b4a1c2a2415df1 1-33535
+data/raw/layouts.csv
+  s_6b087d85366ce1::t_0aaa0231ff4346 1-315
+docs/api.md
+  s_6b087d85366ce1::t_b4abe441054b2d 1-3
+docs/apidocs.css
+  s_6b087d85366ce1::t_a02606e9b064e1 1-14
+docs/config.js
+  s_6b087d85366ce1::t_3b85e323dd6d0b 1
+ired_88_research_copilot/__init__.py
+  s_6b087d85366ce1::t_3a78c7c24b27a5 1-8
+ired_88_research_copilot/data.py
+  s_6b087d85366ce1::t_4d14c5e4b7d197 1-118
+ired_88_research_copilot/structure.py
+  s_6b087d85366ce1::t_ab118683a98e31 1-346
+kb/papers/aleku-2016-aoired.md
+  s_6b087d85366ce1::t_d5db7a4615ed92 1-24
+kb/papers/alley-2019-unirep.md
+  s_6b087d85366ce1::t_55acab3c550fb1 1-30
+kb/papers/biswas-2021-low-n.md
+  s_6b087d85366ce1::t_2c1b67af712087 1-26
+kb/papers/gilio-2022-ired-review.md
+  s_6b087d85366ce1::t_5fd58e260ed796 1-50
+kb/papers/ma-2021-machine-directed-evolution.md
+  s_6b087d85366ce1::t_7cfefa3564980d 1-50
+kb/papers/schober-2019-lsd1-ired.md
+  s_6b087d85366ce1::t_58bd02fd2a18e4 1-28
+mkdocs.yaml
+  s_6b087d85366ce1::t_d0cf0438a23771 1-50
+notebooks/00_overarching_question.py
+  s_6b087d85366ce1::t_5927323bfce8fe 1-121
+notebooks/01_dms_activity_map.py
+  s_6b087d85366ce1::t_2233e7c57ee50d 1-154
+notebooks/02_structure_context.py
+  s_6b087d85366ce1::t_2dedb5418b369a 1-176
+notebooks/04_structure_prediction.py
+  s_6b087d85366ce1::t_afc7d4060bd825 1-186
+notebooks/05_synthesis.py
+  s_6b087d85366ce1::t_c83cf818555081 1-181
+pixi.lock
+  s_6b087d85366ce1::t_9bc3cca8e0c5bf 1-6683
+pyproject.toml
+  s_6b087d85366ce1::t_deb18044ad11c4 1-160
+skills-lock.json
+  s_6b087d85366ce1::t_47be6d91a12ee1 1-11
+tests/test___init__.py
+  s_6b087d85366ce1::t_ed4e0f5985cdd6 1
+tests/test_data.py
+  s_6b087d85366ce1::t_76cf45f36de8bc 1-56
+tests/test_kb.py
+  s_6b087d85366ce1::t_24892a4b8608b5 1-38
+tests/test_structure.py
+  s_6b087d85366ce1::t_164446291547fa 1-148
+uv.lock
+  s_6b087d85366ce1::t_6bf30ec7800f73 1-3388
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "30d148126e117b9ffb0fe89e522b48a1f3ac2b5a",
+  "prompts": {},
+  "sessions": {
+    "s_6b087d85366ce1": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0dab0-d271-7396-baf6-4e3fce3d217a",
+        "model": "glm-5.3-flash"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
