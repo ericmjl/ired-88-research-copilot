@@ -1,0 +1,43 @@
+notebooks/02_structure_context.py
+  s_6b087d85366ce1::t_feb13ac955f4fb 82-91,103,134-148
+notebooks/03_knowledge_base.py
+  s_6b087d85366ce1::t_aad8f8b3d56bdd 53
+notebooks/04_structure_prediction.py
+  s_6b087d85366ce1::t_9d5acd7bb78bf0 79-90,152-164
+notebooks/06_masked_recovery.py
+  s_6b087d85366ce1::t_499bfb4e01589d 1-290
+notebooks/live/02_structure_context.py
+  s_6b087d85366ce1::t_7dd50da7c7a463 1-69
+notebooks/live/__marimo__/session/01_dms_activity_map.py.json
+  s_6b087d85366ce1::t_cead963dbf88f4 1-113
+notebooks/live/__marimo__/session/02_structure_context.py.json
+  s_6b087d85366ce1::t_60905bf670d93c 1-113
+notebooks/live/__marimo__/session/03_knowledge_base.py.json
+  s_6b087d85366ce1::t_aa1f94b01b294f 1-113
+notebooks/live/__marimo__/session/04_structure_prediction.py.json
+  s_6b087d85366ce1::t_9802ecbc59814f 1-113
+notebooks/live/__marimo__/session/05_additivity.py.json
+  s_6b087d85366ce1::t_1d2a74204862c1 1-139
+notebooks/live/__marimo__/session/06_masked_recovery.py.json
+  s_6b087d85366ce1::t_76bf365eacd9b9 1-139
+tests/test_data.py
+  s_6b087d85366ce1::t_18c81618a901d7 57-84
+tests/test_kb.py
+  s_6b087d85366ce1::t_a5f909a4df9d16 39-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "77c2e134f9b7a4197e367487fe34a440e82b080f",
+  "prompts": {},
+  "sessions": {
+    "s_6b087d85366ce1": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0dab0-d271-7396-baf6-4e3fce3d217a",
+        "model": "glm-5.3-flash"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
