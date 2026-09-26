@@ -48,6 +48,13 @@ question ladder. Keep changes consistent with that design.
 - **Data citation**: `data/raw/` files come from the paper's supporting
   information (see `data/raw/README.md`). Do not redistribute them outside
   the demo context; cite the paper.
+- **Design system**: every notebook calls `theme.apply()` (from
+  `ired_88_research_copilot/theme.py`) in its imports cell and uses the
+  shared palette (`theme.PRIMARY`, `theme.SITE_CLASS_COLORS`, ...) for all
+  figures; question headers use the `Q# / 6` pill pattern and answers use
+  `mo.callout(kind="success", ...)`. Plot/computation cells carry
+  `@app.cell(hide_code=True)`; keep markdown, imports, and interactive
+  control cells visible.
 - **Verifying notebooks**: after editing a notebook, run
   `pixi run marimo export html notebooks/<name>.py -o /tmp/out.html`
   and check the export contains no `marimo-error` cells; then confirm any

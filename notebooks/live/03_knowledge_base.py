@@ -51,7 +51,13 @@ def _():
 
 @app.cell
 def _():
-    # search: "A296 296 C-terminal tail" -- expect silence
+    # search: "A296I" -- expect silence
+    return
+
+
+@app.cell
+def _(mo):
+    # bonus if time: a live mo.ui.text query box wired to kb.search_notes
     return
 
 

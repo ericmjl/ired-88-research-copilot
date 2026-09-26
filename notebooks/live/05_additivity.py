@@ -74,6 +74,12 @@ def _():
 
 @app.cell
 def _(mo):
+    # bonus if time: a strategy dropdown filtering the expected-vs-observed scatter
+    return
+
+
+@app.cell
+def _(mo):
     mo.md(r"""## Answer""")
     return
 
