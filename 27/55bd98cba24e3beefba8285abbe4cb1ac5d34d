@@ -1,0 +1,43 @@
+notebooks/00_overarching_question.py
+  s_6b087d85366ce1::t_e590cccb84cc5c 9,12-15,19,21-30,40-46,52-77,85-86,93,95-106,109-125,128,132-140,142-152
+notebooks/01_dms_activity_map.py
+  s_6b087d85366ce1::t_38c3a8ed45c6e0 13-16,20,22-24,26-31,38,41-50,54-71,73-74,77-78,80-83,86,90,92,94,96,98,102-103,106-108,111-115,118,121,124-125,131-136,138-142,148,150-152,155-156,163-167,173-244
+notebooks/02_structure_context.py
+  s_6b087d85366ce1::t_9547c3856fedb7 13,15-16,20,22-26,29-34,36-41,45-46,55,64,66,69-76,79-80,88-89,94,96-109,111-112,115-116,118-128,132-133,135,139,147,151,153-166,170,172-180,182-183,188-207
+notebooks/04_structure_prediction.py
+  s_6b087d85366ce1::t_39d1a5a29d3315 14,16-17,21,23-27,30-33,35-37,44,47,49,51,55-83,88-91,93-94,96,99,101-114,118-119,122,127-134,139-157,159-160,163-165,180,182-217,222-228,231,234,239-262
+notebooks/05_additivity.py
+  s_6b087d85366ce1::t_bf38fcbe6101eb 14,16-17,21,23-27,33-34,43,48,53,58-60,70,72,76-77,84,86,91-97,100-101,104,113,132,137-138,140,142-145,148,153-170,172-173,175-184,188,192,195-200,202,206-207,221,224-226,230,232-246,248,255-265,267-268,273-297
+notebooks/06_masked_recovery.py
+  s_6b087d85366ce1::t_2e25e27f6e7b32 14,16-17,21,23-25,27,29-33,43,45-46,49,53-57,61-63,65-68,70,74-75,79-89,91-94,99,101-104,106-113,117-118,124,126-127,140-147,150,153-154,157-163,165-166,168-171,176-181,184,186-188,190-193,195-196,200-203,207-211,214-215,218-219,223,228,230-231,236,243,246,249,254-278,280-307
+notebooks/live/01_dms_activity_map.py
+  s_6b087d85366ce1::t_5fefa78d58a6f4 59-64
+notebooks/live/03_knowledge_base.py
+  s_6b087d85366ce1::t_7a8af55bc2838b 54-60
+notebooks/live/05_additivity.py
+  s_6b087d85366ce1::t_539076f4a6d4e2 75-80
+notebooks/live/__marimo__/session/01_dms_activity_map.py.json
+  s_6b087d85366ce1::t_f136b32136d396 101-113
+notebooks/live/__marimo__/session/02_structure_context.py.json
+  s_6b087d85366ce1::t_d5f2fe2d5aa0dd 23
+notebooks/live/__marimo__/session/03_knowledge_base.py.json
+  s_6b087d85366ce1::t_ee311e604f21c6 88,101-113
+notebooks/live/__marimo__/session/05_additivity.py.json
+  s_6b087d85366ce1::t_c1093d157b81ba 127-139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2755bd98cba24e3beefba8285abbe4cb1ac5d34d",
+  "prompts": {},
+  "sessions": {
+    "s_6b087d85366ce1": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0dab0-d271-7396-baf6-4e3fce3d217a",
+        "model": "glm-5.3-flash"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
