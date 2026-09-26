@@ -138,3 +138,30 @@ def snippet_for(note: KBNote, query: str, width: int = 300) -> str:
     prefix = "..." if start > 0 else ""
     suffix = "..." if end < len(text) else ""
     return f"{prefix}{text[start:end].strip()}{suffix}"
+
+
+#: Mutation notation, e.g. ``S220T`` or the stop-codon form ``A111*``.
+MUTATION_TOKEN = re.compile(r"\b([A-Z])(\d+)([A-Z*])\b")
+
+
+def extract_mutation_positions(notes: list[KBNote]) -> dict[int, list[str]]:
+    """Map sequence positions to the mutation strings the KB mentions.
+
+    Scans every note's body for ``S220T``-style tokens (including tokens
+    inside combination strings such as ``Q194L; S220T; H230Y``) and collects
+    the positions they touch. Words like ``IRED88``, ``ZPL389``, or PDB IDs
+    do not match the pattern.
+
+    :param notes: Notes to scan.
+    :returns: Mapping of 1-based sequence position to the mutation strings
+        that mention it, with the mentioning note's file stem appended in
+        parentheses, e.g. ``220 -> ["S220T (gilio-2022-ired-review)"]``.
+    """
+    mentions: dict[int, list[str]] = {}
+    for note in notes:
+        for match in MUTATION_TOKEN.finditer(note.body):
+            mutation, position = match.group(0), int(match.group(2))
+            entry = f"{mutation} ({note.path.stem})"
+            if entry not in mentions.setdefault(position, []):
+                mentions[position].append(entry)
+    return dict(sorted(mentions.items()))

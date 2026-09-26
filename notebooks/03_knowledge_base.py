@@ -50,12 +50,7 @@ def _(mo, notes, pd):
             for note in notes
         ]
     )
-    mo.md(
-        r"""
-        ## The six notes in the KB
-        """
-    )
-    notes_df
+    mo.vstack([mo.md(r"""## The six notes in the KB"""), notes_df])
     return (notes_df,)
 
 

@@ -27,7 +27,12 @@ Eric's own from his Novartis days.
 | Q2 | [`notebooks/02_structure_context.py`](notebooks/02_structure_context.py) | Are the beneficial positions where the structure says they should be? | DMS + PDB 7OG3 |
 | Q3 | [`notebooks/03_knowledge_base.py`](notebooks/03_knowledge_base.py) | What does prior work already know about the top hits? | `kb/papers/*.md` |
 | Q4 | [`notebooks/04_structure_prediction.py`](notebooks/04_structure_prediction.py) | What does prediction see that the crystal cannot? | ESMFold + 7OG3 |
-| Q5 | [`notebooks/05_synthesis.py`](notebooks/05_synthesis.py) | What should we mutate next -- and what did we learn? | everything |
+| Q5 | [`notebooks/05_additivity.py`](notebooks/05_additivity.py) | Doubles and triples of top mutations: additive or epistatic? (Does the KB's claim survive the data?) | SI-003 combos + SI-002 singles + site classes |
+| Q6 | [`notebooks/06_masked_recovery.py`](notebooks/06_masked_recovery.py) | If the DMS had a hole where the literature matters, would we have noticed? | everything |
+
+Presenting live? [`notebooks/live/`](notebooks/live) holds empty skeleton twins
+of every analysis notebook -- same questions, no code -- to build up on
+stage, with the filled versions above as the answer key.
 
 Start at [`notebooks/00_overarching_question.py`](notebooks/00_overarching_question.py).
 

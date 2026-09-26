@@ -52,6 +52,12 @@ question ladder. Keep changes consistent with that design.
   `pixi run marimo export html notebooks/<name>.py -o /tmp/out.html`
   and check the export contains no `marimo-error` cells; then confirm any
   hardcoded numbers in answer cells against the rendered output.
+- **Live skeletons**: `notebooks/live/` holds empty twins of every analysis
+  notebook (same filename, question cells + imports + step-hint comments
+  only) for presenting the demo on stage. When you add or rename an
+  analysis notebook, create or update its live twin in the same change.
+  Keep the twins importable and exportable (they run, they just have no
+  analysis code).
 
 ## Repository layout (expectations)
 

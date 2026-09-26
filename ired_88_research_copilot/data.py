@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
+from typing import Iterable
 
 import pandas as pd
 from pyprojroot import here
@@ -116,3 +117,25 @@ def summarize_by_position(singles: pd.DataFrame) -> pd.DataFrame:
     return singles.groupby("pos").agg(
         mean_activity=("mean", "mean"), n_mutants=("mutation", "count")
     )
+
+
+def mask_positions(singles: pd.DataFrame, positions: Iterable[int]) -> pd.DataFrame:
+    """Simulate a library gap by dropping all measurements at some positions.
+
+    :param singles: Single-mutant table from :func:`extract_single_mutants`.
+    :param positions: Positions to mask (1-based, matching the ``pos``
+        column).
+    :returns: Copy of the input with every row whose ``pos`` is in
+        ``positions`` removed.
+    """
+    return singles[~singles["pos"].isin(set(positions))].copy()
+
+
+def split_combination(mutation: str) -> list[str]:
+    """Split a combination mutation string into its component mutations.
+
+    :param mutation: Mutation string such as ``"Q194L; S220T; H230Y"``.
+    :returns: Component mutation tokens, e.g. ``["Q194L", "S220T",
+        "H230Y"]``. A plain single mutation returns a one-element list.
+    """
+    return [token.strip() for token in mutation.split(";") if token.strip()]

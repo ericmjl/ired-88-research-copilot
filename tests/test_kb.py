@@ -36,3 +36,25 @@ def test_snippet_mentions_query_term():
     note = next(n for n in notes if "gilio" in n.path.name)
     snippet = kb.snippet_for(note, "S220T")
     assert "S220" in snippet
+
+
+def test_extract_mutation_positions():
+    """The KB's mutation tokens map to exactly the six known positions."""
+    notes = kb.load_all_notes()
+    positions = kb.extract_mutation_positions(notes)
+    assert set(positions) == {129, 156, 177, 194, 220, 230}
+    assert any("S220T" in mention for mention in positions[220])
+
+
+def test_extract_mutation_positions_no_false_positives():
+    """Identifiers like IRED88, ZPL389, and 5FWN do not match."""
+    import tempfile
+    from pathlib import Path
+
+    with tempfile.TemporaryDirectory() as tmp:
+        note_path = Path(tmp) / "fake-note.md"
+        note_path.write_text(
+            "---\ntitle: fake\nyear: 2024\n---\n\nIRED88 and ZPL389 and 5FWN and si_002 and H4 receptor.\n"
+        )
+        positions = kb.extract_mutation_positions([kb.load_note(note_path)])
+    assert positions == {}

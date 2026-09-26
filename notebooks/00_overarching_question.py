@@ -67,7 +67,8 @@ def _(mo):
         | Q2 | `02_structure_context.py` | Are the beneficial positions where the structure says they should be? | DMS + crystal structure (7OG3) |
         | Q3 | `03_knowledge_base.py` | What does prior work already know about our top hits? | `kb/papers/*.md` |
         | Q4 | `04_structure_prediction.py` | What does prediction see that the crystal cannot? | ESMFold prediction + 7OG3 |
-        | Q5 | `05_synthesis.py` | What should we mutate next -- and what did we learn? | everything |
+        | Q5 | `05_additivity.py` | Doubles and triples: additive or epistatic? (Does the KB's claim survive the data?) | SI-003 combos + SI-002 singles + site classes |
+        | Q6 | `06_masked_recovery.py` | If the DMS had a hole where the literature matters, would we have noticed? | everything |
 
         The four modalities, all in one repo:
 

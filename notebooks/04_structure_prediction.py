@@ -76,14 +76,19 @@ def _(alt, mo, pd, per_res_distance, resnums):
         )
         .properties(width=900, height=220)
     )
-    mo.md(
-        r"""
-        The flexible loop around positions 207-222 and 242-243 deviates
-        most -- exactly the neighborhood of the S220 lead and the 243
-        cluster from Q1. Hypothesis: those positions tune a mobile region.
-        """
+    mo.vstack(
+        [
+            mo.md(
+                r"""
+                The flexible loop around positions 207-222 and 242-243
+                deviates most -- exactly the neighborhood of the S220 lead
+                and the 243 cluster from Q1. Hypothesis: those positions
+                tune a mobile region.
+                """
+            ),
+            distance_chart,
+        ]
     )
-    distance_chart
     return (distance_chart,)
 
 
@@ -144,15 +149,20 @@ def _(alt, bfactors, mo, pd):
         )
         .properties(width=900, height=240)
     )
-    mo.md(
-        r"""
-        The confidence dip over the C-tail is the model flagging its own
-        uncertainty exactly where the crystallographers found no density;
-        the N-terminus stays confident, which tells us disorder-in-crystal
-        and low-prediction-confidence are not the same thing.
-        """
+    mo.vstack(
+        [
+            mo.md(
+                r"""
+                The confidence dip over the C-tail is the model flagging its
+                own uncertainty exactly where the crystallographers found no
+                density; the N-terminus stays confident, which tells us
+                disorder-in-crystal and low-prediction-confidence are not the
+                same thing.
+                """
+            ),
+            plddt_chart,
+        ]
     )
-    plddt_chart
     return (plddt_chart,)
 
 

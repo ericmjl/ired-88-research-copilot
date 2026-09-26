@@ -79,13 +79,17 @@ def _(alt, by_position, mo):
         )
         .properties(width=900, height=280)
     )
-    mo.md(
-        r"""
-        Red = within 6 A of the cofactor (active site), orange = 6-12 A
-        (second shell), blue = >12 A (distal), grey = no coordinates.
-        """
+    mo.vstack(
+        [
+            mo.md(
+                r"""
+                Red = within 6 A of the cofactor (active site), orange = 6-12 A
+                (second shell), blue = >12 A (distal), grey = no coordinates.
+                """
+            ),
+            class_chart,
+        ]
     )
-    class_chart
     return (class_chart, class_colors)
 
 
@@ -96,12 +100,7 @@ def _(distances, mo, singles, structure):
     top15["site_class"] = top15["pos"].map(lambda p: structure.site_class(distances[p]))
     top15["in_crystal"] = top15["pos"].map(lambda p: p in distances)
     top_table = top15[["mutation", "pos", "mean", "count", "site_class", "in_crystal"]]
-    mo.md(
-        r"""
-        ## The top 15, annotated
-        """
-    )
-    top_table
+    mo.vstack([mo.md(r"""## The top 15, annotated"""), top_table])
     return (top_table,)
 
 
@@ -132,17 +131,22 @@ def _(alt, by_position, mo, pd):
         )
         .properties(width=500, height=280)
     )
-    mo.md(
-        r"""
-        ## The enrichment test
+    mo.vstack(
+        [
+            mo.md(
+                r"""
+                ## The enrichment test
 
-        If activity improvements came from active-site chemistry, the
-        top-50 positions should be red. They are not: **zero of the top 50**
-        are active-site positions. The improvement signal lives in distal
-        positions and in the grey band the crystal cannot see.
-        """
+                If activity improvements came from active-site chemistry, the
+                top-50 positions should be red. They are not: **zero of the
+                top 50** are active-site positions. The improvement signal
+                lives in distal positions and in the grey band the crystal
+                cannot see.
+                """
+            ),
+            enrichment_chart,
+        ]
     )
-    enrichment_chart
     return (enrichment_chart, top50)
 
 
