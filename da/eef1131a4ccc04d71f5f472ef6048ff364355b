@@ -1,0 +1,49 @@
+notebooks/05_additivity.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 20,252,271
+  s_ee132e8be1a47d::t_be0cfb06bd1a3f 293-294
+notebooks/06_masked_recovery.py
+  s_ee132e8be1a47d::t_a80f6f3b49d57c 207-208,266
+  s_ee132e8be1a47d::t_c4f3c43257c81a 20,199,252,277
+notebooks/live/01_dms_activity_map.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 14,16-18,22,24-27,56,61
+  s_ee132e8be1a47d::t_0affb0dbfe6c54 3,11,63-65
+notebooks/00_overarching_question.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 17,19-29,33,35-43,68,71,73-79,83,85-94,98,100-114,118
+notebooks/03_knowledge_base.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 17,66,140,160
+  s_ee132e8be1a47d::t_58fecaad2fdfb6 179
+notebooks/02_structure_context.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 19,37,186
+notebooks/04_structure_prediction.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 20,54,237
+  s_ee132e8be1a47d::t_ac35ed8f9774c5 258
+notebooks/live/04_structure_prediction.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 19,25,61
+notebooks/live/06_masked_recovery.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 19,27,76
+notebooks/01_dms_activity_map.py
+  s_ee132e8be1a47d::t_04716cf388386a 229
+  s_ee132e8be1a47d::t_c4f3c43257c81a 19,159,220
+notebooks/live/03_knowledge_base.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 17,23,64
+notebooks/live/05_additivity.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 19,25,81
+notebooks/live/02_structure_context.py
+  s_ee132e8be1a47d::t_c4f3c43257c81a 18,26,62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "daeef1131a4ccc04d71f5f472ef6048ff364355b",
+  "prompts": {},
+  "sessions": {
+    "s_ee132e8be1a47d": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0dd49-2a81-76f4-b82d-eb41a0a36136",
+        "model": "glm-5.3-flash"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
