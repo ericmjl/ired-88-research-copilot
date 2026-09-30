@@ -14,7 +14,7 @@ def _():
     return kb, mo, pd, theme
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo, theme):
     mo.md(
         f"""
@@ -63,7 +63,7 @@ def _(mo, notes, pd):
     return (notes_block,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""
@@ -137,7 +137,7 @@ def _(kb, kb_query, mo, notes):
     return (ranked_hits,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(kb, mo, notes):
     a296_hits = kb.search_notes(notes, "A296I")
     mo.callout(
@@ -157,7 +157,7 @@ def _(kb, mo, notes):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.callout(
         mo.md(
@@ -176,7 +176,7 @@ def _(mo):
             - It documents the engineered winner (**Q194L/S220T/H230Y**,
               99% ee) and the ML-guided alternative (M129L/A156S/Y177W).
             - The KB is **silent on A296I**. Prior work ends where this demo
-              begins -- which is the point of a copilot, not an oracle.
+              begins.
             """
         ),
         kind="success",

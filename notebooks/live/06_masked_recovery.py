@@ -16,7 +16,7 @@ def _():
     return alt, data, kb, mo, np, pd, structure
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""# Q6 -- If the DMS had a hole where the literature matters, would we have noticed?"""
@@ -24,7 +24,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""
@@ -73,7 +73,7 @@ def _():
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""## Answer""")
     return

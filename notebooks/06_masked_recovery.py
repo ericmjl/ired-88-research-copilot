@@ -17,7 +17,7 @@ def _():
     return alt, data, kb, mo, np, pd, structure, theme
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo, theme):
     mo.md(
         f"""
@@ -196,7 +196,7 @@ def _(alt, mask_list, mo, np, pd, structure, theme):
     return (dev_chart,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(kb, mask_list, mo, notes):
     kb_recovery_hits = kb.search_notes(notes, "S220T ee improvement combination")
     kb_md = mo.md(
@@ -204,8 +204,8 @@ def _(kb, mask_list, mo, notes):
         ## Recovery attempt 3 -- the knowledge base
 
         The mask came *from* the KB, so of course the KB "recovers" these
-        positions -- and we should say so plainly: **this is a workflow
-        demonstration, not a blind test**. The KB is an independent record
+        positions -- **this is a workflow demonstration, not a blind
+        test**. The KB is an independent record
         of what the campaign learned, with a different failure mode than the
         data: it searched here and found {len(kb_recovery_hits)} notes
         naming the winners and their mechanisms.
@@ -249,7 +249,7 @@ def _(data, kb_positions, mask_list, mo, pd, singles):
     return (score_table,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.callout(
         mo.md(
@@ -263,7 +263,7 @@ def _(mo):
             - **Structure alone would not have recovered them.** **Prediction
               gives a real partial signal** (S220 at 4.2 A deviation, Q194 at
               2.7). **The KB recovers all six -- by construction**, and the
-              circularity is the honest caveat.
+              circularity is the caveat.
             - **The reverse case is the counterweight:** A296I -- the #1
               single mutant -- is absent from the KB. Data finds what
               literature lacks; literature recovers what data loses.
@@ -274,7 +274,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo, theme):
     mo.md(
         f"""

@@ -16,7 +16,7 @@ def _():
     return alt, data, mo, pd, structure, theme
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo, theme):
     mo.md(
         f"""
@@ -34,7 +34,7 @@ def _(mo, theme):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""
@@ -183,7 +183,7 @@ def _(alt, by_position, mo, pd, theme):
     return (enrichment_chart,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.callout(
         mo.md(

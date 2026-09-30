@@ -16,13 +16,13 @@ def _():
     return alt, data, mo, np, pd
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""# Q5 -- Doubles and triples: additive or epistatic?""")
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""
@@ -78,7 +78,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""## Answer""")
     return

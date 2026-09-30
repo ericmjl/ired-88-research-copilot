@@ -17,7 +17,7 @@ def _():
     return alt, mo, np, pd, structure, theme
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo, theme):
     mo.md(
         f"""
@@ -51,7 +51,7 @@ def _(np, pd, structure):
     return crystal, deviation, global_rmsd, n_shared, predicted, resnums, target
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(global_rmsd, mo, n_shared):
     validation_stats = mo.hstack(
         [
@@ -234,7 +234,7 @@ def _(crystal, mo, np, pd, plddt, predicted, structure):
     return (tail_df,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.callout(
         mo.md(
@@ -255,8 +255,7 @@ def _(mo):
               DMS agree that this region is *mobile and important*; neither
               can name the mechanism alone.
             - Structure prediction did not "solve" the question. It narrowed
-              it and sharpened what to test next -- which is what a copilot
-              is for.
+              it and sharpened what to test next.
             """
         ),
         kind="success",

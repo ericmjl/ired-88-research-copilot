@@ -16,7 +16,7 @@ def _():
     return alt, data, mo, pd, structure, theme
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo, theme):
     mo.md(
         f"""
@@ -156,7 +156,7 @@ def _(alt, mo, pd, singles, theme):
     return (position_chart,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""
@@ -217,7 +217,7 @@ def _(alt, distances, mo, position_slider, singles, structure, theme):
     return (explorer_chart,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.callout(
         mo.md(
@@ -226,7 +226,7 @@ def _(mo):
 
             - The two strongest single mutants are **A296I** (mean 0.712,
               measured 7 times) and **S220T** (mean 0.678, measured **685**
-              times -- clearly re-measured heavily as the lead hit). Both
+              times -- re-measured heavily as the lead hit). Both
               beat the median mutant by >20x.
             - Beneficial positions are **scattered across the whole
               sequence**: near the N-terminus (6, 26, 57), mid-sequence

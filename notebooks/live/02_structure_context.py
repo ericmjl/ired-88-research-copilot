@@ -15,7 +15,7 @@ def _():
     return alt, data, mo, pd, structure
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""# Q2 -- Are the beneficial positions where the structure says they should be?"""
@@ -23,7 +23,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""
@@ -59,7 +59,7 @@ def _():
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""## Answer""")
     return

@@ -17,7 +17,7 @@ def _():
     return alt, data, mo, np, pd, theme
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo, theme):
     mo.md(
         f"""
@@ -249,7 +249,7 @@ def _(alt, covered, mo, theme):
     return (epi_chart,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(covered, mo):
     winner = covered[covered["mutation"] == "Q194L; S220T; H230Y"].iloc[0]
     winner_callout = mo.callout(
@@ -268,7 +268,7 @@ def _(covered, mo):
     return (winner_callout,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.callout(
         mo.md(
@@ -290,8 +290,8 @@ def _(mo):
               residue. Saying so is part of the analysis.
             - Design implication: combine **distal, well-measured singles
               within one lineage** -- that is where additivity holds -- and
-              validate combinations empirically. Which is exactly what the
-              campaign did.
+              validate combinations empirically, exactly what this campaign
+              did.
             """
         ),
         kind="success",

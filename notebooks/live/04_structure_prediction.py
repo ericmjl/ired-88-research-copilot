@@ -16,13 +16,13 @@ def _():
     return alt, mo, np, pd, structure
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""# Q4 -- What does structure prediction see that the crystal cannot?""")
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""
@@ -58,7 +58,7 @@ def _():
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""## Answer""")
     return
