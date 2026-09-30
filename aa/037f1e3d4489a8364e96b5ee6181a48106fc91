@@ -1,0 +1,37 @@
+data/external/README.md
+  s_ee132e8be1a47d::t_45572b1a061223 3
+  s_ee132e8be1a47d::t_2e4c73e034a0a9 5-9
+  s_ee132e8be1a47d::t_4d5b31543e9bd7 4
+scripts/fetch_data.py
+  s_ee132e8be1a47d::t_a0fb7907dd3d4f 42,86-88,91-93,154-157
+  s_ee132e8be1a47d::t_f773d62344ab6d 50,57
+  s_ee132e8be1a47d::t_af3fb8d2e5b692 127
+  s_ee132e8be1a47d::t_84509e73631f55 1-41,43-49,51-56,58-63,65-78,89,97-110,112-117,119-126,128-153,158-167
+  s_ee132e8be1a47d::t_49e4f307c9253a 64,79-85,90,94-96,111,118
+pyproject.toml
+  s_ee132e8be1a47d::t_06ff6569024d8f 155
+README.md
+  s_ee132e8be1a47d::t_5223190c75a01c 55,79-82
+data/raw/README.md
+  s_ee132e8be1a47d::t_e1c0ce599d967b 11-17
+.gitignore
+  s_ee132e8be1a47d::t_1856bbf8cdf41f 149,154-159
+notebooks/00_overarching_question.py
+  s_ee132e8be1a47d::t_2b8555f09b7b14 125
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "aa037f1e3d4489a8364e96b5ee6181a48106fc91",
+  "prompts": {},
+  "sessions": {
+    "s_ee132e8be1a47d": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0dd49-2a81-76f4-b82d-eb41a0a36136",
+        "model": "glm-5.3-flash"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
