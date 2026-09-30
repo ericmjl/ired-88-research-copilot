@@ -1,0 +1,23 @@
+ired_88_research_copilot/data.py
+  s_ee132e8be1a47d::t_503b4bd207171a 31,57-59,64-65
+data/raw/README.md
+  s_ee132e8be1a47d::t_23e12cadde2f9b 27-30
+scripts/fetch_data.py
+  s_ee132e8be1a47d::t_3ca22ec51be1de 79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "1703bbf11b0399f1df211632bad365a873027582",
+  "prompts": {},
+  "sessions": {
+    "s_ee132e8be1a47d": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0dd49-2a81-76f4-b82d-eb41a0a36136",
+        "model": "glm-5.3-flash"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
