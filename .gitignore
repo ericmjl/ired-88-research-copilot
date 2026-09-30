@@ -146,7 +146,14 @@ cython_debug/
 
 # Custom
 notebooks/__marimo__/
+notebooks/live/__marimo__/
 oryx-build-commands.txt
 .DS_Store
 docs/cli.md
 .pixi
+
+# Data is fetched from its sources (scripts/fetch_data.py), not stored in the repo
+data/raw/*
+!data/raw/README.md
+data/external/*
+!data/external/README.md

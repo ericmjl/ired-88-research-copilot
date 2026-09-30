@@ -8,6 +8,13 @@ published as the supporting information of:
 > *11* (20), 12433-12445. DOI:
 > [10.1021/acscatal.1c02786](https://pubs.acs.org/doi/abs/10.1021/acscatal.1c02786)
 
+## Fetch, don't clone
+
+The CSV files are **not stored in this repo**. `pixi run fetch-data`
+pulls them from the paper's official Figshare deposit and verifies each
+file against the deposit's MD5. `ired-master-table.csv` and `layouts.csv`
+were never publicly deposited; the demo notebooks do not read them.
+
 Use these files for demos and teaching; cite the paper for any external use
 of the raw tables and respect applicable terms from the original study.
 

@@ -122,6 +122,7 @@ def _(mo):
 
     ```bash
     pixi install
+    pixi run fetch-data
     pixi run marimo edit notebooks/
     ```
 

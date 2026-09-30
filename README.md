@@ -52,6 +52,7 @@ Helper code lives in `ired_88_research_copilot/` (`data.py`, `structure.py`,
 
 ```bash
 pixi install
+pixi run fetch-data
 pixi run marimo edit notebooks/
 ```
 
@@ -75,8 +76,10 @@ uv run scripts/predict_structure_esmfold.py
 > [10.1021/acscatal.1c02786](https://pubs.acs.org/doi/abs/10.1021/acscatal.1c02786)
 
 Crystal structure: PDB [7OG3](https://www.rcsb.org/structure/7OG3)
-(1.90 A, deposited with the paper). Use the bundled data for demos and
-teaching; cite the paper for any external use of the raw tables.
+(1.90 A, deposited with the paper). The data files are fetched, not
+bundled: `pixi run fetch-data` pulls them from the paper's official
+Figshare deposit and RCSB and verifies checksums. Cite the paper for any
+external use of the raw tables.
 
 ## Notes for agents (and humans)
 

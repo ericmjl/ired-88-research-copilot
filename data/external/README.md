@@ -1,6 +1,12 @@
 # External structure data
 
-Bundled structural reference files for the demo.
+Structural reference files for the demo, fetched at setup time.
+
+The PDB files are **not stored in this repo**: `pixi run fetch-data`
+downloads `7OG3.pdb` from RCSB and regenerates `ired88_esmfold.pdb` via
+`scripts/predict_structure_esmfold.py` (the public ESM Fold API returns
+the same coordinates as the original run). Only `ired88_wt.fasta` -- the
+published wild-type sequence -- is written by the fetch script itself.
 
 | File | Contents |
 |------|----------|
