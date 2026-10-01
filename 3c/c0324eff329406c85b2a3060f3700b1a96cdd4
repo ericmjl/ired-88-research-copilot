@@ -1,0 +1,59 @@
+literature/ired88/README.md
+  s_65ff20bc447a62::t_38c0d4398c348c 1-61
+literature/ired88/gilio-2022-chem-sci-reductive-aminations.md
+  s_65ff20bc447a62::t_7378a6e0d891d2 1-320
+literature/ired88/braun-2023-acs-catalysis-ml-biocatalysis.md
+  s_65ff20bc447a62::t_85f3d16657797c 16
+  s_65ff20bc447a62::t_c719e451385c92 22
+  s_65ff20bc447a62::t_0c1bbba0e8c332 3
+  s_0b51c0dcaac132::t_f10cc4399f1c0c 1-2,4-15,17-21,23-368
+literature/ired88/marshall-2023-acs-catalysis-ml-biocatalysis.md
+  s_65ff20bc447a62::t_e108edecf45db0 1-21,23-368
+  s_65ff20bc447a62::t_6f6e4d0e147af6 22
+literature/ired88/siirola-2023-chimia-novartis-biocatalysis.md
+  s_65ff20bc447a62::t_7378a6e0d891d2 1-794
+literature/ired88/kalicanin-2026-mdpi-ired-engineering.md
+  s_65ff20bc447a62::t_7378a6e0d891d2 1-1951
+literature/ired88/sangster-2021-cbic-enzymatic-bond-formation.md
+  s_65ff20bc447a62::t_262bd321f2d786 1-611
+literature/ired88/xing-2025-jacs-au-redam-detect.md
+  s_65ff20bc447a62::t_8ca5decb60964b 1-176
+notebooks/live/03_knowledge_base.py
+  s_ba3284b971f94d::t_46ca95bfb3667f 3,11,16-18,24-27,56,63-65
+notebooks/01_dms_activity_map.py
+  s_65ff20bc447a62::t_b8204f6621111a 3,21-31,72,97,119,154,159-165,179,213
+notebooks/03_knowledge_base.py
+  s_65ff20bc447a62::t_60b3051a0fa023 3,19-31,61,66-67,69-72,133
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3cc0324eff329406c85b2a3060f3700b1a96cdd4",
+  "prompts": {},
+  "sessions": {
+    "s_0b51c0dcaac132": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "c986a8c8-1d9e-44e0-8399-a184c50a6c75",
+        "model": "grok-4.7"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    },
+    "s_65ff20bc447a62": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "6d5bc675-c0bb-4078-a53f-b59c019f059a",
+        "model": "grok-4.7"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    },
+    "s_ba3284b971f94d": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b856c64b-9a6f-4850-8973-5d5743485040",
+        "model": "grok-4.7"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
