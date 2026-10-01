@@ -1,0 +1,29 @@
+.github/workflows/pr-tests.yaml
+  s_ba3284b971f94d::t_53d81636493b79 24-26
+.github/workflows/code-style.yaml
+  s_ba3284b971f94d::t_362b3f08f8ff7c 17-19
+.github/workflows/docs.yaml
+  s_ba3284b971f94d::t_c725086cb87dc7 22
+  s_ba3284b971f94d::t_d682702dc63d32 35,37
+  s_ba3284b971f94d::t_a67dcae59c1190 12-13
+.github/workflows/release-pypi-package.yaml
+  s_ba3284b971f94d::t_fcd734f79c460a 150,159,172,184,192,205,210,219,224,230
+  s_ba3284b971f94d::t_0f4e972a5df1d4 58
+  s_ba3284b971f94d::t_d95860ddb7cae2 86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "48053a46fc41fef5fe1ec45adc7afc5ebedabd3a",
+  "prompts": {},
+  "sessions": {
+    "s_ba3284b971f94d": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b856c64b-9a6f-4850-8973-5d5743485040",
+        "model": "grok-4.7"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
