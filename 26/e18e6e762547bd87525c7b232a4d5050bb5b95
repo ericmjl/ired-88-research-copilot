@@ -1,0 +1,19 @@
+.gitignore
+  s_ba3284b971f94d::t_acc0416c73c21c 148-149
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "26e18e6e762547bd87525c7b232a4d5050bb5b95",
+  "prompts": {},
+  "sessions": {
+    "s_ba3284b971f94d": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b856c64b-9a6f-4850-8973-5d5743485040",
+        "model": "grok-4.7"
+      },
+      "human_author": "Eric Ma <ericmajinglong@gmail.com>"
+    }
+  }
+}
