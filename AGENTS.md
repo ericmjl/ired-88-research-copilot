@@ -30,10 +30,14 @@ course. Its structure is the demo: four modalities in one repo (DMS data,
 knowledge base, crystal structure, structure prediction) answering one
 question ladder. Keep changes consistent with that design.
 
-- **The question ladder is load-bearing**: each notebook in `notebooks/`
-  answers exactly one question and states its answer in a closing markdown
-  cell. If you add an analysis, hang it off an existing notebook or extend
-  the ladder in `README.md` and `00_overarching_question.py` too.
+- **The question ladder is load-bearing**: `notebooks/reference.py` is the
+  filled notebook and `notebooks/live.py` is the live demo. Both run Q1
+  through Q6 in that order. The reference notebook states each answer in a
+  closing markdown cell. The live notebook is step hints for all six
+  questions, each ending in an empty Answer cell. Do not split them back
+  into one file per question.
+  If you add an analysis, hang it off the matching section in both files,
+  and extend the ladder in `README.md` too.
 - **Knowledge base**: one note per paper in `kb/papers/`, YAML frontmatter
   with `title`/`authors`/`year`/`doi`/`url`/`tags`; register new notes in
   `kb/index.md`. Every factual claim in a note must trace to the cited
@@ -55,16 +59,26 @@ question ladder. Keep changes consistent with that design.
   `mo.callout(kind="success", ...)`. Plot/computation cells carry
   `@app.cell(hide_code=True)`; keep markdown, imports, and interactive
   control cells visible.
+- **Notebook cell rhythm**: every code cell that produces an output sits
+  between two markdown cells. The cell before states the scientific question
+  that the next table or plot is meant to answer. The cell after states the
+  finding in that output. Write both as exploration, with headings that
+  carry the claim or the question. Do not use mechanical labels such as
+  "Why this plot" or "What the plot shows". Write the prose in precise,
+  direct scientific language. State the measurement. Do not use metaphor
+  ("the enzyme goes quiet", "a hot column", "the gain we can trust").
+  A code cell has exactly one
+  output: do not stack tables, charts, or prose in one cell with
+  `mo.vstack` or `mo.hstack`. The imports cell is the exception; it only
+  binds names and does not produce an output.
 - **Verifying notebooks**: after editing a notebook, run
   `pixi run marimo export html notebooks/<name>.py -o /tmp/out.html`
   and check the export contains no `marimo-error` cells; then confirm any
   hardcoded numbers in answer cells against the rendered output.
-- **Live skeletons**: `notebooks/live/` holds empty twins of every analysis
-  notebook (same filename, question cells + imports + step-hint comments
-  only) for presenting the demo on stage. When you add or rename an
-  analysis notebook, create or update its live twin in the same change.
-  Keep the twins importable and exportable (they run, they just have no
-  analysis code).
+- **Live demo**: `notebooks/live.py` is the on-stage notebook. When you add
+  a section to `notebooks/reference.py`, add the matching question and
+  step-hint cells to `notebooks/live.py` in the same change. Keep the live
+  notebook importable and exportable.
 
 ## Repository layout (expectations)
 

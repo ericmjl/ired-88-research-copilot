@@ -147,8 +147,6 @@ cython_debug/
 # Custom
 # Project environment is Pixi (pixi.lock), not uv.
 uv.lock
-notebooks/__marimo__/
-notebooks/live/__marimo__/
 oryx-build-commands.txt
 .DS_Store
 docs/cli.md

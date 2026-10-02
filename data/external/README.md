@@ -13,6 +13,8 @@ published wild-type sequence -- is written by the fetch script itself.
 | `7OG3.pdb` | Crystal structure of wild-type IRED-88 (X-ray, 1.90 A, chains A/B, NADP ligands), deposited with Ma et al. 2021 by M. Faller and E. Koch. Source: <https://www.rcsb.org/structure/7OG3>. |
 | `ired88_wt.fasta` | The 304-residue wild-type IRED-88 sequence (DMS numbering, no expression tag). |
 | `ired88_esmfold.pdb` | ESMFold prediction of the wild-type sequence (via the public ESM Fold API, <https://esmatlas.com>), all 304 residues including the C-terminal tail missing from the crystal. B-factors hold per-residue pLDDT **divided by 100** (multiply by 100 for the usual 0-100 score). Regenerate with `scripts/predict_structure_esmfold.py`. |
+| `bacredam.fasta` | BacRedAm, 307 residues, GenBank PZN88780.1. Aleku et al. 2024, Table S1 (DOI 10.1016/j.checat.2024.101160). NCBI's title for the accession is the source annotation "6-phosphogluconate dehydrogenase". |
+| `bacredam_esmfold.pdb` | ESMFold prediction of that sequence. No experimental structure and no AlphaFold DB model were available. B-factors are pLDDT/100. Regenerate with `scripts/predict_bacredam_esmfold.py`. |
 
 ## Numbering
 

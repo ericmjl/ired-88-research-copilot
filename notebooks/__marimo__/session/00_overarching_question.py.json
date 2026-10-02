@@ -1,0 +1,113 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "942bae2accc6435440f682834da1ed94",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "d8905931fd1ee2323e43696128e7a202",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"background:linear-gradient(135deg, #0f766e 0%, #134e4a 100%);\n            border-radius:16px; padding:28px 32px; color:white;\">\n<div style=\"font-size:13px; letter-spacing:2px; opacity:0.85;\n            text-transform:uppercase;\">AI as a Research Co-Pilot \u00b7 Live demo</div>\n<h1 style=\"margin:10px 0 6px 0; font-size:34px; line-height:1.15;\">\nThe IRED-88 Research Copilot</h1>\n<div style=\"font-size:15px; opacity:0.92;\">\nOne enzyme, four data modalities, one question ladder -- in a single repo.</div>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "1002a000bf431adce52f42b0295e0b6b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">An enzyme-engineering campaign produced a deep mutational scan, an\nenantioselectivity table, a 1.9 A crystal structure, and a set of\nengineered variants. Around it sits a small <strong>knowledge base</strong> of six\npapers. This demo runs the round-trip between all four modalities --\nand asks one question on the way:</span>\n<blockquote>\n<h4 id=\"where-do-activity-improving-mutations-of-the-enzyme-ired-88-come-from-and-could-we-have-seen-them-coming\">Where do activity-improving mutations of the enzyme IRED-88 come from -- and could we have seen them coming?</h4>\n</blockquote></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "f4c17f7999730664c5f999867f22c8d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><div style='flex: 1'><marimo-stat data-value='&quot;4,720&quot;' data-label='&quot;single mutants&quot;' data-caption='&quot;of 5,776 possible&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat></div><div style='flex: 1'><marimo-stat data-value='&quot;81%&quot;' data-label='&quot;library coverage&quot;' data-caption='&quot;cloned &amp; measured&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat></div><div style='flex: 1'><marimo-stat data-value='&quot;310&quot;' data-label='&quot;engineered variants&quot;' data-caption='&quot;doubles &amp; triples&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat></div><div style='flex: 1'><marimo-stat data-value='&quot;6&quot;' data-label='&quot;KB papers&quot;' data-caption='&quot;kb/papers/&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat></div><div style='flex: 1'><marimo-stat data-value='&quot;290&quot;' data-label='&quot;crystal residues&quot;' data-caption='&quot;of 304 (PDB 7OG3)&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "1b21c459b9ac4cda39b31f9601b87db0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"the-question-ladder\">The question ladder</h2>\n<span class=\"paragraph\">Each notebook answers one question; together they answer the big one.\nEverything runs top-to-bottom with no hidden state -- every claim\ntraces to a cell, a file, or a KB note.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "84286d865dd9611e84178d836e4bc91b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><table>\n<thead>\n<tr>\n<th>#</th>\n<th>Notebook</th>\n<th>Question</th>\n<th>Leans on</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Q1</strong></td>\n<td><code>01_dms_activity_map.py</code></td>\n<td>Which mutations improve activity, and where do they sit?</td>\n<td>DMS table (SI-002)</td>\n</tr>\n<tr>\n<td><strong>Q2</strong></td>\n<td><code>02_structure_context.py</code></td>\n<td>Are the hits where the structure says they should be?</td>\n<td>DMS + PDB 7OG3</td>\n</tr>\n<tr>\n<td><strong>Q3</strong></td>\n<td><code>03_knowledge_base.py</code></td>\n<td>What does prior work already know?</td>\n<td><code>kb/papers/*.md</code></td>\n</tr>\n<tr>\n<td><strong>Q4</strong></td>\n<td><code>04_structure_prediction.py</code></td>\n<td>What does prediction see that the crystal cannot?</td>\n<td>ESMFold + 7OG3</td>\n</tr>\n<tr>\n<td><strong>Q5</strong></td>\n<td><code>05_additivity.py</code></td>\n<td>Doubles &amp; triples: additive or epistatic?</td>\n<td>SI-003 + site classes</td>\n</tr>\n<tr>\n<td><strong>Q6</strong></td>\n<td><code>06_masked_recovery.py</code></td>\n<td>If the DMS had a hole where the literature matters?</td>\n<td>everything</td>\n</tr>\n</tbody>\n</table></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "42bbefd8693f8094db595c5d2a752efa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"the-four-modalities\">The four modalities</h2>\n<table>\n<thead>\n<tr>\n<th>Modality</th>\n<th>Where</th>\n<th>What it is good at</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>DMS + ee data</strong></td>\n<td><code>data/raw/</code></td>\n<td><em>Discovery</em> -- finding hits nobody guessed</td>\n</tr>\n<tr>\n<td><strong>Crystal structure</strong></td>\n<td><code>data/external/7OG3.pdb</code></td>\n<td><em>Mechanism filtering</em> -- killing bad priors</td>\n</tr>\n<tr>\n<td><strong>Knowledge base</strong></td>\n<td><code>kb/</code></td>\n<td><em>Explanation &amp; recovery</em> -- naming what worked and why</td>\n</tr>\n<tr>\n<td><strong>Structure prediction</strong></td>\n<td><code>data/external/ired88_esmfold.pdb</code></td>\n<td><em>Blind-spot extension</em> -- with a confidence score attached</td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\">Helper code lives in <code>ired_88_research_copilot/</code> (<code>data.py</code>,\n<code>structure.py</code>, <code>kb.py</code>, <code>theme.py</code>), with tests in <code>tests/</code>.\nPresenting live? <code>notebooks/live/</code> holds empty skeleton twins of\nevery notebook.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "b04d51f05e01c57a5917175460d7bc94",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"run-it\">Run it</h2>\n<div class=\"language-bash codehilite\"><pre><span></span><code>pixi<span class=\"w\"> </span>install\npixi<span class=\"w\"> </span>run<span class=\"w\"> </span>fetch-data\npixi<span class=\"w\"> </span>run<span class=\"w\"> </span>marimo<span class=\"w\"> </span>edit<span class=\"w\"> </span>notebooks/\n</code></pre></div>\n<span class=\"paragraph\">Data source: supporting information of Ma et al.,\n<em>ACS Catal.</em> <strong>2021</strong>, 11 (20), 12433-12445\n(<a href=\"https://pubs.acs.org/doi/abs/10.1021/acscatal.1c02786\" rel=\"noopener noreferrer\" target=\"_blank\">10.1021/acscatal.1c02786</a>),\nfrom Eric Ma's enzyme-engineering work at Novartis. Crystal structure:\n<a href=\"https://www.rcsb.org/structure/7OG3\" rel=\"noopener noreferrer\" target=\"_blank\">PDB 7OG3</a>. Use the bundled data\nfor demos and teaching; cite the paper for anything beyond that.</span>\n<span class=\"paragraph\">Start with <code>01_dms_activity_map.py</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

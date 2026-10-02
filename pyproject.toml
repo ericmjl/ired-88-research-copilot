@@ -80,6 +80,7 @@ dependencies = [
     "altair",
     "matplotlib",
     "pandas",
+    "plotly",
     "pyyaml",
     "scikit-learn",
     "numpy",
@@ -91,7 +92,7 @@ dependencies = [
     "typer",
     "jax",
     "marimo-lens>=0.2.3,<0.3",
-    "marimo-studio>=0.2.3,<0.3",
+    "marimo-studio[deno]>=0.2.3,<0.3",
 ]
 readme = "README.md"
 

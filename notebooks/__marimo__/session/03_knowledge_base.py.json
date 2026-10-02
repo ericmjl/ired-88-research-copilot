@@ -1,0 +1,126 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "ec53540c55e494377ed8f797f593bb2d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "47171a62fe811959d21c57ad178b906a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><span style=\"background:#7c5cbf;color:white;padding:3px 12px;\nborder-radius:12px;font-size:12px;font-weight:600\">Q3 / 6 \u00b7 THE KNOWLEDGE BASE</span></span>\n<h1 id=\"what-does-prior-work-already-know-about-our-top-hits\">What does prior work already know about our top hits?</h1>\n<span class=\"paragraph\"><code>kb/papers/</code> holds one markdown note per paper: YAML frontmatter for\nstructure, prose for claims. This is what makes the repo a <em>research\ncopilot</em> rather than a folder of data -- analysis questions can be\nanswered not just from numbers, but from what the literature already\nestablished, searched programmatically via\n<code>ired_88_research_copilot/kb.py</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "951f46252493d7f81b8c322043ed4ab0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "490aadec64c4ef10b3d9b64c09e804a9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"the-six-notes-in-the-kb\">The six notes in the KB</h2></span><marimo-ui-element object-id='bkHC-0' random-id='7b51570c-b00e-4a64-e3b6-68e53ef1ea15'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;note&#92;&quot;:&#92;&quot;aleku-2016-aoired.md&#92;&quot;,&#92;&quot;year&#92;&quot;:2016,&#92;&quot;title&#92;&quot;:&#92;&quot;Stereoselectivity and structural characterization of an imine reductase ...&#92;&quot;,&#92;&quot;tags&#92;&quot;:&#92;&quot;ired, crystal-structure, stereoselectivity, aoired&#92;&quot;},{&#92;&quot;note&#92;&quot;:&#92;&quot;alley-2019-unirep.md&#92;&quot;,&#92;&quot;year&#92;&quot;:2019,&#92;&quot;title&#92;&quot;:&#92;&quot;Unified rational protein engineering with sequence-based deep representa...&#92;&quot;,&#92;&quot;tags&#92;&quot;:&#92;&quot;unirep, machine-learning, representations, machine-directed-evolution&#92;&quot;},{&#92;&quot;note&#92;&quot;:&#92;&quot;schober-2019-lsd1-ired.md&#92;&quot;,&#92;&quot;year&#92;&quot;:2019,&#92;&quot;title&#92;&quot;:&#92;&quot;Chiral synthesis of LSD1 inhibitor GSK2879552 enabled by directed evolut...&#92;&quot;,&#92;&quot;tags&#92;&quot;:&#92;&quot;ired, directed-evolution, industrial-process, gsk&#92;&quot;},{&#92;&quot;note&#92;&quot;:&#92;&quot;biswas-2021-low-n.md&#92;&quot;,&#92;&quot;year&#92;&quot;:2021,&#92;&quot;title&#92;&quot;:&#92;&quot;Low-N protein engineering with data-efficient deep learning&#92;&quot;,&#92;&quot;tags&#92;&quot;:&#92;&quot;low-n, machine-learning, sample-efficiency, machine-directed-evolution&#92;&quot;},{&#92;&quot;note&#92;&quot;:&#92;&quot;ma-2021-machine-directed-evolution.md&#92;&quot;,&#92;&quot;year&#92;&quot;:2021,&#92;&quot;title&#92;&quot;:&#92;&quot;Machine-Directed Evolution of an Imine Reductase for Activity and Stereo...&#92;&quot;,&#92;&quot;tags&#92;&quot;:&#92;&quot;ired-88, dms, machine-directed-evolution, anchor-paper&#92;&quot;},{&#92;&quot;note&#92;&quot;:&#92;&quot;gilio-2022-ired-review.md&#92;&quot;,&#92;&quot;year&#92;&quot;:2022,&#92;&quot;title&#92;&quot;:&#92;&quot;Reductive aminations by imine reductases: from milligrams to tons&#92;&quot;,&#92;&quot;tags&#92;&quot;:&#92;&quot;review, ired, engineering-strategies, stereoselectivity&#92;&quot;}]&quot;' data-total-rows='6' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='6' data-field-types='[[&quot;note&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;year&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;title&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;tags&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "8deaddd400d90c7ade9a6e37824587a1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"ask-the-kb-anything\">Ask the KB anything</h2>\n<span class=\"paragraph\">Edit the query below -- the search re-runs as you type. Terms are\nmatched against every note's title, tags, and body; notes matching\nmore distinct terms rank higher.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "6b42bcfcc279eabcabe05d1d1f352bd5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='763ad1e9-7864-47b8-6a4a-072ab0a3bc28'><marimo-text data-initial-value='&quot;S220 active site mouth stereoselectivity&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eKB query&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='true' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "22b1de786c0222eab980926e042894c6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"results-for-s220-active-site-mouth-stereoselectivity-4-of-6-notes-matched\">Results for <code>S220 active site mouth stereoselectivity</code> (4 of 6 notes matched)</h3></span><marimo-accordion data-labels='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003eGilio, A. K.; Thorpe, T. W.; Turner, N. J.; Grogan, G. (2022). Reductive aminations by imine reductases: from milligrams to tons DOI: 10.1039/d2sc00124a&#92;u003c/strong&#92;u003e (matched 5 terms)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-multiple='false' data-expanded='[]'><div><marimo-ui-element object-id='Xref-0' random-id='6e058f43-48ba-0313-b2bd-6e83c09f2b96'><marimo-lazy data-initial-value='false' data-label='null' data-show-loading-indicator='false'></marimo-lazy></marimo-ui-element></div></marimo-accordion><marimo-accordion data-labels='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003eMa, E. J.; Siirola, E.; Moore, C.; Kummer, A.; Stoeckli, M.; Faller, M.; et al. (2021). Machine-Directed Evolution of an Imine Reductase for Activity and Stereoselectivity DOI: 10.1021/acscatal.1c02786&#92;u003c/strong&#92;u003e (matched 4 terms)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-multiple='false' data-expanded='[]'><div><marimo-ui-element object-id='Xref-1' random-id='727a5611-7156-d961-8fa7-dd7516bc9094'><marimo-lazy data-initial-value='false' data-label='null' data-show-loading-indicator='false'></marimo-lazy></marimo-ui-element></div></marimo-accordion><marimo-accordion data-labels='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003eAleku, G. A.; et al. (2016). Stereoselectivity and structural characterization of an imine reductase (IRED) from Amycolatopsis orientalis DOI: 10.1021/acscatal.6b00348&#92;u003c/strong&#92;u003e (matched 1 term)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-multiple='false' data-expanded='[]'><div><marimo-ui-element object-id='Xref-2' random-id='e2b02723-23eb-b386-ccf9-6f72735ce81d'><marimo-lazy data-initial-value='false' data-label='null' data-show-loading-indicator='false'></marimo-lazy></marimo-ui-element></div></marimo-accordion></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "62135eb06054b0d4e729ccf9c2c3096a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eA &#92;u003cstrong&#92;u003e0-note silence&#92;u003c/strong&#92;u003e: querying the KB for&#92;n&#92;u003cstrong&#92;u003eA296I&#92;u003c/strong&#92;u003e -- the strongest DMS hit -- returns nothing. No prior&#92;nwork (as captured here) has interpreted this mutation. That is a&#92;ngenuine open question, not a failure of the KB. The KB tells us&#92;nwhat is &#92;u003cem&#92;u003eknown&#92;u003c/em&#92;u003e; what to do about the unknown is Q4&#x27;s job&#92;n(structure prediction) -- and ultimately the lab&#x27;s. Try it in&#92;nthe query box above.&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;neutral&quot;'></marimo-callout-output>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "8adef0b54138da46db4f632ded61b0bc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003ch3 id=&#92;&quot;answer-q3&#92;&quot;&#92;u003eAnswer -- Q3&#92;u003c/h3&#92;u003e&#92;n&#92;u003cul&#92;u003e&#92;n&#92;u003cli&#92;u003eThe KB explains the #2 DMS hit: &#92;u003cstrong&#92;u003eS220T&#92;u003c/strong&#92;u003e was independently&#92;n  interpreted as &#92;&quot;at the mouth of the active site cleft&#92;&quot;,&#92;n  restricting access of the wrong substrate conformer and lifting&#92;n  ee from 30% to 96% (Gilio et al. 2022, reading Ma et al. 2021).&#92;n  Our distance-to-cofactor analysis called S220 &#92;&quot;distal&#92;&quot;; the KB&#92;n  corrects the &#92;u003cem&#92;u003einterpretation&#92;u003c/em&#92;u003e, not the geometry.&#92;u003c/li&#92;u003e&#92;n&#92;u003cli&#92;u003eThe KB warns that &#92;u003cstrong&#92;u003elinear additivity holds outside the active&#92;n  site&#92;u003c/strong&#92;u003e but breaks down inside it -- a falsifiable claim that&#92;n  Q5 will test against the data.&#92;u003c/li&#92;u003e&#92;n&#92;u003cli&#92;u003eIt documents the engineered winner (&#92;u003cstrong&#92;u003eQ194L/S220T/H230Y&#92;u003c/strong&#92;u003e,&#92;n  99% ee) and the ML-guided alternative (M129L/A156S/Y177W).&#92;u003c/li&#92;u003e&#92;n&#92;u003cli&#92;u003eThe KB is &#92;u003cstrong&#92;u003esilent on A296I&#92;u003c/strong&#92;u003e. Prior work ends where this demo&#92;n  begins.&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ul&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;success&quot;'></marimo-callout-output>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

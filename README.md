@@ -21,20 +21,19 @@ Eric's own from his Novartis days.
 
 ## The question ladder
 
-| # | Notebook | Question | Leans on |
-|---|----------|----------|----------|
-| Q1 | [`notebooks/01_dms_activity_map.py`](notebooks/01_dms_activity_map.py) | Which single mutations improve activity, and where do they sit along the sequence? | DMS table (paper SI-002) |
-| Q2 | [`notebooks/02_structure_context.py`](notebooks/02_structure_context.py) | Are the beneficial positions where the structure says they should be? | DMS + PDB 7OG3 |
-| Q3 | [`notebooks/03_knowledge_base.py`](notebooks/03_knowledge_base.py) | What does prior work already know about the top hits? | `kb/papers/*.md` |
-| Q4 | [`notebooks/04_structure_prediction.py`](notebooks/04_structure_prediction.py) | What does prediction see that the crystal cannot? | ESMFold + 7OG3 |
-| Q5 | [`notebooks/05_additivity.py`](notebooks/05_additivity.py) | Doubles and triples of top mutations: additive or epistatic? (Does the KB's claim survive the data?) | SI-003 combos + SI-002 singles + site classes |
-| Q6 | [`notebooks/06_masked_recovery.py`](notebooks/06_masked_recovery.py) | If the DMS had a hole where the literature matters, would we have noticed? | everything |
+Both notebooks run these questions in order.
+[`notebooks/reference.py`](notebooks/reference.py) is the filled notebook.
+[`notebooks/live.py`](notebooks/live.py) is the live demo: Q1 through Q6
+are step hints.
 
-Presenting live? [`notebooks/live/`](notebooks/live) holds empty skeleton twins
-of every analysis notebook -- same questions, no code -- to build up on
-stage, with the filled versions above as the answer key.
-
-Start at [`notebooks/00_overarching_question.py`](notebooks/00_overarching_question.py).
+| # | Question | Leans on |
+|---|----------|----------|
+| Q1 | Which single mutations improve activity, and where do they sit along the sequence? | DMS table (paper SI-002) |
+| Q2 | Are the beneficial positions where the structure says they should be? | DMS + PDB 7OG3 |
+| Q3 | What does prior work already know about the top hits? | `kb/papers/*.md` |
+| Q4 | What does prediction see that the crystal cannot? | ESMFold + 7OG3 |
+| Q5 | Doubles and triples of top mutations: additive or epistatic? (Does the KB's claim survive the data?) | SI-003 combos + SI-002 singles + site classes |
+| Q6 | If the DMS had a hole where the literature matters, would we have noticed? | everything |
 
 ## The four modalities
 
