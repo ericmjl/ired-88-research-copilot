@@ -157,3 +157,6 @@ data/raw/*
 !data/raw/README.md
 data/external/*
 !data/external/README.md
+
+# Marimo Studio rebuilds these from the view source
+notebooks/__marimo__/**/.artifacts/

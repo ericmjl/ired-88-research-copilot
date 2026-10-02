@@ -1,0 +1,106 @@
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#app-shell {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+#app-shell {
+  min-height: 100%;
+}
+
+.reveal.studio-deck {
+  --r-background-color: #fff;
+  --r-main-color: #212529;
+  --r-heading-color: #212529;
+  --r-link-color: #209cee;
+  --r-link-color-hover: #108de0;
+  --r-selection-background-color: #d6eaff;
+  --r-main-font: "Press Start 2P", monospace;
+  --r-heading-font: "Press Start 2P", monospace;
+  --r-heading-font-weight: 400;
+  --r-heading-letter-spacing: 0;
+  --marimo-cell-font: "Press Start 2P", monospace;
+  --marimo-cell-heading-font: "Press Start 2P", monospace;
+  --marimo-cell-foreground: #212529;
+  --marimo-cell-accent: #209cee;
+  font-size: 16px;
+}
+
+.reveal.studio-deck .slides {
+  text-align: left;
+}
+
+.reveal.studio-deck .slides section {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0.7rem 1.1rem 0.5rem;
+}
+
+.reveal.studio-deck h1,
+.reveal.studio-deck h2 {
+  max-width: none;
+  margin: 0 0 0.25rem;
+  text-transform: none;
+}
+
+.reveal.studio-deck h1 {
+  font-family: "Press Start 2P", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.slide-frame.nes-container {
+  height: 100%;
+  margin: 0;
+  background: #fff;
+}
+
+.deck-kicker {
+  margin: 0 0 1.2rem;
+  color: #4f6957;
+  font-size: 0.48em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+marimo-cell,
+marimo-output {
+  /* Press Start 2P stays legible at its native pixel size. */
+  --marimo-cell-font-size: 11px;
+  display: block;
+  min-width: 0;
+  font-family: "Press Start 2P", monospace;
+}
+
+.slide-chart,
+.slide-viewer {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-chart-standout {
+  zoom: 1.35;
+  margin-top: 1.2rem;
+}
+
+.slide-sentence {
+  margin-top: 0.15rem;
+}
+
+.reveal.studio-deck .controls,
+.reveal.studio-deck .progress {
+  color: #212529;
+}
