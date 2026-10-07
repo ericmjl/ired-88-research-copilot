@@ -12,7 +12,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
-      - uses: prefix-dev/setup-pixi@v0.8.1
+      - uses: prefix-dev/setup-pixi@v0.10.2
         with:
           # Pin the version that wrote pixi.lock. A newer pixi rewrites the
           # lockfile, and the pixi-install pre-commit hook then fails the job.
